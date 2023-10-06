@@ -1,11 +1,11 @@
 package org.example;
 
 public enum DaysOfWeek {
-    MONDAY("monday", "working day"),
-    TUESDAY("tuesday", "working day"),
-    WEDNESDAY("wednesday", "working day"),
-    THURSDAY("thursday", "working day"),
-    FRIDAY("friday", "working day"),
+    MONDAY("monday", "monday"),
+    TUESDAY("tuesday", "tuesday"),
+    WEDNESDAY("wednesday", "wednesday"),
+    THURSDAY("thursday", "thursday"),
+    FRIDAY("friday", "friday"),
     SATURDAY("saturday", "weekend"),
     SUNDAY("sunday", "weekend");
 
