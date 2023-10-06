@@ -31,23 +31,9 @@ public class PersonRepository {
 
     public int getTotalGenderCount(Gender gender) {
         int totalCount = 0;
-        if(gender == Gender.MALE) {
-            for(Person person : persons) {
-                if (person.gender() == Gender.MALE ) {
-                    totalCount++;
-                }
-            }
-        } else if(gender == Gender.FEMALE) {
-            for(Person person : persons) {
-                if (person.gender() == Gender.FEMALE ) {
-                    totalCount++;
-                }
-            }
-        } else if(gender == Gender.DIVERS) {
-            for(Person person : persons) {
-                if (person.gender() == Gender.DIVERS) {
-                    totalCount++;
-                }
+        for(Person person : persons) {
+            if (person.gender() == gender ) {
+                totalCount++;
             }
         }
         return totalCount;
